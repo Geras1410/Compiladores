@@ -280,8 +280,8 @@ class AFN:
             es_aceptacion = any(estado in self.edos_acept for estado in subconjunto)
             conjIj.TransicionesAFD[-1] = 1 if es_aceptacion else -1  # -1 para no aceptación
 
-            # Ahora recorremos todos los símbolos ASCII (usaremos de 0 a 127)
-            for simbolo_ascii in range(128):
+            # Ahora recorremos todos los símbolos ASCII
+            for simbolo_ascii in range(255):
                 simbolo = chr(simbolo_ascii)
 
                 # Aplicar la función go_to para este subconjunto con el símbolo actual

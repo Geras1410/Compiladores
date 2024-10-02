@@ -1,7 +1,8 @@
 from AFN_File.AFN import AFN
+from tkinter import *
 
 #Crear el AFN basico
-afn = AFN.afn_basico(['a', 'z'], token="Token_Rango")
+afn = AFN.afn_basico(['A', 'Z'], token="Token_Rango")
 
 #Convertir el AFN a un AFD usando el metodo de subconjuntos
 afd = afn.convertir_a_afd()
